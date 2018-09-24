@@ -1,0 +1,43 @@
+<div class="mat-bg--primary--400" [style.min-height] = "'100vh'" fxFlex="100" fxLayoutAlign="center center">
+  <div fxFlex="100" [style.max-width]="'400px'">
+    <mat-card>
+      <div class="py-1" ngClass.gt-xs="p-1">
+        <div class="logo text-center">
+          <img src="assets/images/avatar.png">
+          <div class="mat-h2 mt-5">LOGIN TO YOUR ACCOUNT</div>
+        </div>
+        <div class="mt-1">
+          <form>
+              <div>
+                <mat-form-field fxFlex="100">
+                  <input matInput placeholder="Email">
+                </mat-form-field>
+              </div>
+              <div>
+                <mat-form-field fxFlex="100">
+                  <input matInput placeholder="Password">
+                </mat-form-field>
+              </div>
+          </form>
+          <div fxLayoutAlign="space-between center" fxLayout="row" class="mb-1" fxLayoutGap=".2rem">
+            <mat-checkbox>Remember Me</mat-checkbox>
+            <span fxFlex></span>
+            <a routerLink="/admin/forgot-password" class="mat-body-1 text-center link">Forgot Password?</a>
+          </div>
+          <div fxLayout="column" fxLayoutAlign="center center" class="my-1" fxLayoutGap="1rem">
+            <button mat-raised-button color="accent" class="my-1" [style.width]="'220px'">LOGIN</button>
+            <div class="seperator">
+              <span class="text">OR</span>
+            </div>
+            <button mat-raised-button class="btn--google f-13-400">Login with Google</button>
+            <button mat-raised-button class="btn--facebook f-13-400">Login with Facebook</button>
+          </div>
+          <div fxLayout="column" fxLayoutAlign="center center" class="mt-1" fxLayoutGap=".5rem">
+            <div class="mat-body-2 mb-0">Don't have an account?</div>
+            <a routerLink="/admin/register" class="mat-body-1 link">Create an account</a>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>

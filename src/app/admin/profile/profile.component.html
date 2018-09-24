@@ -1,0 +1,277 @@
+<div fxLayout="row" fxLayoutWrap="wrap">
+  <div fxFlex="100" fxFlex.gt-sm="350px" fxFlex.sm="100" fxLayoutWrap="Wrap" fxLayoutAlign.gt-sm="start start">
+    <div fxFlex.sm="50" fxFlex="100" fxFlex.gt-md="100">
+      <mat-card class="mat-bg--primary">
+        <div fxLayout="column" fxLayoutAlign="center center">
+          <div class="profile-menu__list">
+            <button mat-icon-button [matMenuTriggerFor]="taskOptions" class="task__options">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #taskOptions="matMenu">
+              <button mat-menu-item><mat-icon>close</mat-icon><span>Suspend</span></button>
+              <button mat-menu-item><mat-icon>edit</mat-icon><span>Edit</span></button>
+              <button mat-menu-item><mat-icon>delete</mat-icon><span>Delete</span></button>
+            </mat-menu>
+          </div>
+        <div class="profile__pic">
+          <img src="assets/images/avataar.png">
+        </div>
+        <h3 class="mat-h3--light text-center mb-0 mt-5">John Doe</h3>
+        <span class="mat-h5">john.doe@example.com</span>
+      </div>
+        <div class="profile__nav mat-card--bg pt-1 pb-1">
+          <mat-nav-list class="icon--48">
+            <mat-list-item>
+              <mat-icon>email</mat-icon>
+              <div fxLayout="column">
+                <span class="font-weight--500">john.doe@example.com</span>
+                <span class="mat-hint mat-h5 m-0">Email</span>
+              </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <mat-icon>phone</mat-icon>
+              <div fxLayout="column">
+                <span class="font-weight--500">9876543210</span>
+                <span class="mat-hint mat-h5 m-0">Phone</span>
+              </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <mat-icon>public</mat-icon>
+              <div fxLayout="column">
+                <span class="font-weight--500">facebook.com/johndoe</span>
+                <span class="mat-hint mat-h5 m-0">Facebook</span>
+              </div>
+            </mat-list-item>
+          </mat-nav-list>
+        </div>
+      </mat-card>
+    </div>
+    <div fxFlex.sm="50" fxFlex="100" fxFlex.gt-md="100" fxLayoutAlign.xs="stretch stretch">
+      <mat-card class="default" fxFlex.xs="100">
+        <mat-card-header>
+          <mat-card-title>Contact Info</mat-card-title>
+        </mat-card-header>
+        <mat-list class="icon--48">
+          <mat-list-item>
+            <mat-icon>web</mat-icon>www.radicalloop.com
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon>email</mat-icon>hello@radicalloop.com
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon>phone</mat-icon>9999999999
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon>add_location</mat-icon>Ahmedabad
+          </mat-list-item>
+        </mat-list>
+      </mat-card>
+    </div>
+  </div>
+
+  <div fxFlex.gt-sm="calc(100%-350px)" fxFlex="100" fxLayoutWrap="Wrap">
+    <div fxFlex.gt-md="40" fxFlex="100">
+      <mat-card class="default">
+        <mat-card-header>
+          <mat-card-title>Story</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="p-1">
+          <div class="timeline">
+            <div class="timeline__item mb-1" fxLayout="row">
+              <div class="timeline__body" ngclass.gt-xs="ml-1">
+                <div class="timeline__body__top">
+                 <div class="mat-hint">1 hour ago</div>
+                 <div><a class="link">Jhone Doe</a> added phone number</div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item mb-1" fxLayout="row">
+              <div class="timeline__body" ngclass.gt-xs="ml-1">
+                <div class="timeline__body__top">
+                 <div class="mat-hint">Sun, 11 Feb</div>
+                 <div><a class="link">Jhone Doe</a> assign you a <a class="link">Mockup Design.</a>.</div>
+                </div>
+                <div class="timeline__body__actions">
+                  <a href="#" class="mat-hint">Comment</a>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item mb-1" fxLayout="row">
+              <div class="timeline__body" ngclass.gt-xs="ml-1">
+                <div class="timeline__body__top">
+                 <div class="mat-hint">1 hour ago</div>
+                 <div><a class="link">Jhone Doe</a> updated his status</div>
+                </div>
+                <div class="timeline__body__content">
+                    <p>Back to work</p>
+                </div>
+                <div class="timeline__body__actions">
+                  <a href="#" class="mat-hint">Comment</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline__item mb-1" fxLayout="row">
+              <div class="timeline__body" ngclass.gt-xs="ml-1">
+                <div class="timeline__body__top">
+                 <div class="mat-hint">1 hour ago</div>
+                 <div><a class="link">Jhone Doe</a> updated his status</div>
+                </div>
+                <div class="timeline__body__content">
+                    <img src="assets/images/timeline-photo.png">
+                </div>
+                <div class="timeline__body__actions">
+                  <a href="#" class="mat-hint">Comment</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline__item mb-1" fxLayout="row">
+              <div class="timeline__body" ngclass.gt-xs="ml-1">
+                <div class="timeline__body__top">
+                 <div class="mat-hint">11:30</div>
+                 <div>Call to customer <a class="link">Jhone Doe</a> and discuss the detail.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline__item mb-1" fxLayout="row">
+              <div class="timeline__body" ngclass.gt-xs="ml-1">
+                <div class="timeline__body__top">
+                 <div class="mat-hint">1 hour ago</div>
+                 <div><a class="link">Jhone Doe</a> updated his status</div>
+                </div>
+                <div class="timeline__body__content">
+                    <p>On a vacation!</p>
+                </div>
+                <div class="timeline__body__actions">
+                  <a href="#" class="mat-hint">Comment</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div fxFlex.gt-md="60" fxFlex="100" fxLayoutWrap="wrap" fxLayoutAlign="column" fxLayoutAlign.gt-sm="start start">
+      <div fxFlex="100">
+        <mat-card class="default list--scroll">
+          <mat-card-header>
+            <mat-card-title>
+              To-Do List
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="mb-0">
+            <mat-list>
+              <mat-list-item>
+                <mat-checkbox>Go shopping</mat-checkbox>
+                <span fxFlex></span>
+                <mat-chip color="primary" selected="true">pending</mat-chip>
+                <button mat-icon-button [matMenuTriggerFor]="taskOptions" class="task__options">
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #taskOptions="matMenu">
+                  <button mat-menu-item><mat-icon>close</mat-icon><span>Suspend</span></button>
+                  <button mat-menu-item><mat-icon>edit</mat-icon><span>Edit</span></button>
+                  <button mat-menu-item><mat-icon>delete</mat-icon><span>Delete</span></button>
+                </mat-menu>
+              </mat-list-item>
+              <mat-list-item>
+                <mat-checkbox>Go swimming</mat-checkbox>
+                <span fxFlex></span>
+                <mat-chip color="primary" selected="true">pending</mat-chip>
+                <button mat-icon-button [matMenuTriggerFor]="taskOptions" class="task__options">
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #taskOptions="matMenu">
+                  <button mat-menu-item><mat-icon>done</mat-icon><span>Completed</span></button>
+                  <button mat-menu-item><mat-icon>edit</mat-icon><span>Edit</span></button>
+                  <button mat-menu-item><mat-icon>delete</mat-icon><span>Delete</span></button>
+                </mat-menu>
+              </mat-list-item>
+              <mat-list-item>
+                <mat-checkbox>Buy a cake</mat-checkbox>
+                <span fxFlex></span>
+                <mat-chip color="primary" selected="true">pending</mat-chip>
+                <button mat-icon-button [matMenuTriggerFor]="taskOptions" class="task__options">
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #taskOptions="matMenu">
+                  <button mat-menu-item><mat-icon>done</mat-icon><span>Completed</span></button>
+                  <button mat-menu-item><mat-icon>edit</mat-icon><span>Edit</span></button>
+                  <button mat-menu-item><mat-icon>delete</mat-icon><span>Delete</span></button>
+                </mat-menu>
+              </mat-list-item>
+              <mat-list-item>
+                <mat-checkbox>Meet Andy</mat-checkbox>
+                <span fxFlex></span>
+                <mat-chip color="primary" selected="true">pending</mat-chip>
+                <button mat-icon-button [matMenuTriggerFor]="taskOptions" class="task__options">
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #taskOptions="matMenu">
+                  <button mat-menu-item><mat-icon>done</mat-icon><span>Completed</span></button>
+                  <button mat-menu-item><mat-icon>edit</mat-icon><span>Edit</span></button>
+                  <button mat-menu-item><mat-icon>delete</mat-icon><span>Delete</span></button>
+                </mat-menu>
+              </mat-list-item>
+              <mat-list-item>
+                <mat-checkbox>Watch any movie</mat-checkbox>
+                <span fxFlex></span>
+                <mat-chip color="primary" selected="true">pending</mat-chip>
+                <button mat-icon-button [matMenuTriggerFor]="taskOptions" class="task__options">
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #taskOptions="matMenu">
+                  <button mat-menu-item><mat-icon>done</mat-icon><span>Completed</span></button>
+                  <button mat-menu-item><mat-icon>edit</mat-icon><span>Edit</span></button>
+                  <button mat-menu-item><mat-icon>delete</mat-icon><span>Delete</span></button>
+                </mat-menu>
+              </mat-list-item>
+            </mat-list>
+          </mat-card-content>
+          <mat-card-footer class="m-0">
+            <button mat-button fxFlex="100">View All</button>
+          </mat-card-footer>
+        </mat-card>
+      </div>
+
+      <div fxFlex="100">
+        <mat-card class="default list--scroll">
+          <mat-card-header>
+            <mat-card-title>
+              Simple List
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <mat-table #table [dataSource]="dataSource">
+              <ng-container matColumnDef="position">
+                <mat-header-cell *matHeaderCellDef>Position</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{element.position}}</mat-cell>
+              </ng-container>
+              <ng-container matColumnDef="name">
+                <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{element.name}}</mat-cell>
+              </ng-container>
+              <ng-container matColumnDef="weight">
+                <mat-header-cell *matHeaderCellDef>Weight</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{element.weight}}</mat-cell>
+              </ng-container>
+              <ng-container matColumnDef="symbol">
+                <mat-header-cell *matHeaderCellDef>Symbol</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{element.symbol}}</mat-cell>
+              </ng-container>
+
+              <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+              <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+            </mat-table>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+    </div>
+  </div>
+</div>
